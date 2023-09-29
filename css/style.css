@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+button {
+    border: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr 1fr;
+    gap: 24px;
+    grid-row-gap: 30px ;
+}
+
+.sidebar-container {
+    width: 250px;
+    background: #FBF9F8;
+    min-height: 100vh;
+    position: sticky;
+}
+
+.sidebar-container nav {
+    padding: 0 1.7rem;
+    margin-bottom: 25rem;
+}
+
+.sidebar-container a {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.sidebar-container i{
+    font-size: 1.7rem;
+    opacity: 0.4;
+}
+
+.sidebar-container li{
+    margin-bottom: 29px;
+}
+
+.sidebar-container span{
+    opacity: 0.7;
+}
+
+.icon-container {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 30px;
+}
+
+#logo {
+    padding: 1.7rem;
+    margin-bottom: 50px;
+}
+
+.profile-container{
+    min-height: 30vh;
+    background: #f9f2ef;
+    padding: 1.7rem;
+    /* justify-content: center; */
+}
+
+.profile-container > p {
+    color: #000000;
+    opacity: 0.5;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.profile-wrapper p{
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#shopper {
+    color: #ff9c00;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.profile-container button {
+    border-radius: 8px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    padding: 14px 27px;
+}
+
+.profile-container button i{
+    margin-right: 12px;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.header-container{
+background: #ffffff;
+grid-column: 2 / span3;
+}
+
+/* .linie{
+    border-bottom:#6D6D6D
+} */
+.order-status-container {
+    border-radius: 9px;
+    background: #FFF;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    /* max-width: 325px; */
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  
+} 
+.child2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+} 
+
+.child3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+} 
+
+.child4{
+    grid-column: 3/4;
+    grid-row: 3/4;
+} 
+
+.order-action-container{
+    border-radius: 9px;
+    background: #FFE3B7;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    /* max-width: 325px; */
+    height: 11.6rem;
+    margin-top: -85px;
+}
+.order-container{
+    max-height: 20px;
+    border-bottom: 1px solid #E3E3E3;
+    margin-bottom: 0;
+    margin-left: 22%;
+    
+}
+.child0{
+    grid-column: 1/4;
+    grid-row:4/5;
+}
+    
+.child5{
+    grid-column: 2/3;
+    grid-row: 5/6;
+} 
+
+
+.child6{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+.order-statistic-container{
+    border-radius: 9px;
+    background: #FFF;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    /* margin-bottom: 2rem;    */
+}
+
+.child7{
+    grid-column: 4/5;
+    grid-row: 2/6;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.header-container .first,
+.header-container .second{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-top: 2.7rem;
+    padding-left: 1.6rem;
+    padding-right: 3rem;
+    font-style: normal;
+}
+
+
+.Total-product, .Total-sales, .Pending-orders,.Delivery {
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+}
+
+.Total-product h2,
+.Total-sales h2,
+.Pending-orders h2,
+.Delivery h2{
+    color: #FF9C00;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.Total-product h3,
+.Total-sales h3,
+.Pending-orders h3,
+.Delivery h3{
+    color: #FF9C00;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.icon-container1 img{
+    margin-right: 1.3rem;
+}
+
+.order-action-container h3{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-left: 1.4rem;
+    padding-bottom: 10px;
+}
+
+/* .order-action-container::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #E3E3E3;
+    margin-top: -15px;
+    padding-left: 24px;
+} */
+
+.order-action-container p{
+    color: #6D6D6D;;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1.4rem;
+}
+
+.order-action-container{
+    position: relative;
+}
+
+.order-action-container img{
+    position: absolute;
+    bottom: 1.4rem;
+    right: 1.4rem;
+}
+
+.order-statistic-container h3{
+    max-width: 440px;
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+    margin-bottom: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.block-main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.little-block1,
+.little-block2{
+    margin-top: 2rem;
+    margin-left: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.little-block1,
+.little-block2{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+.round{
+    width: 14rem;
+    /* height: 14rem; */
+    margin-right: 1rem;
+    border: 28px solid #ff9c00;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5.5em;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.procent p{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    
+}
+
+.order-statistic-container h4{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 1.4rem;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+}
+
+.low{
+    margin-left: 1.4rem;
+    margin-right: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock1{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.stock2{
+    color: #DD3A3A;;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+}
+hr{
+    background: #848484;
+    height: 1px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.overflow{
+    overflow-y: scroll;
+    width: 440px;
+    height: 260px;
+    margin: 0 auto;
+    padding: 6px 18px;
+    border: 1px solid rgb(253, 251, 251);
+
+}
+/* .overflow::webkit-scrollbar-thumb{
+    background-color: #090909;
+} */
+
+
+
+ /* .overflow{
+    min-height: 440px;
+ }
+
+ .order-statistic-container::webkit-scrollbar {
+    width: 10px;
+    background-color: #E3E3E3;
+
+ } */ 
+
+
+
+
+@media only screen and  (min-width: 800px) and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 120px repeat(4, 1fr);
+    }
+
+    .header {
+        grid-column: 2 / span2;
+    }
+
+    .child7 {
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+}
+/* создать media query для экрана 350-800px (для экрана 801-1200 сделали на занятии) от 1200px как в макете  */
+@media only screen and (min-width: 350px) and (max-width: 800px) {
+    .grid-container{
+        
+
+    }
+}
